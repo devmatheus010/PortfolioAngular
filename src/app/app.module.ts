@@ -3,16 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BarraComponent } from './barra/barra.component';
+import { RodapeComponent } from './rodape/rodape.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarraComponent,
+    RodapeComponent,
+    
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSlideToggleModule
   ],
-  providers: [],
+  providers: [
+    MatSlideToggleModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
